@@ -1,0 +1,56 @@
+.todo_item {
+    font-size: 30px;
+    background: lightgray;
+    border: 1px black solid;
+    padding: 15px;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    display: grid;
+    flex-direction: row;
+    width: 100%;
+    grid-template-columns: 1fr 70% 1fr 1fr;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.react_icons {
+    vertical-align: middle;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 10px;
+    border-radius: 40%;
+    margin-right: 35px;
+    background: transparent;
+    transition: transform 0.3s;
+  }
+.react_icons_left{
+    vertical-align: middle;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 10px;
+    border-radius: 40%;
+    margin-right: 35px;
+    background: transparent;
+    filter: grayscale(100%) ;
+    transition: transform 0.3s;
+
+}
+.react_icons_left:hover{
+    background: transparent;
+    filter: grayscale(0%) ;
+    transform: scale(1.4);
+
+}
+
+.completedTodo {
+    background-color: unset;
+    border-color: grey;
+    color: grey
+}
+
+.todo_item.completedTodo .react_icon,
+.todo_item.completedTodo .react_icons_left {
+ color: gray;
+}
